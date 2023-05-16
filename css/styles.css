@@ -318,4 +318,59 @@ header {
   color: #f00;
 }
 
+.contacto-box {
+  background-color: rgb(49, 49, 49);
+}
+.contacto-box iframe {
+  width: 100%;
+  height: 500px;
+}
+
+footer {
+  background-color: rgb(49, 49, 49);
+}
+
+hr {
+  color: rgb(109, 109, 109);
+}
+
+.footer {
+  background-color: rgb(49, 49, 49);
+  text-align: center;
+  grid-template-areas: "info subscribe" "info2 subscribe";
+}
+@media (min-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .footer h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-info {
+    grid-area: info2;
+    display: flex;
+  }
+}
+.footer h2, .footer h3, .footer p, .footer ul {
+  color: white;
+}
+.footer-subscribe {
+  grid-area: subscribe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-owner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 /*# sourceMappingURL=styles.css.map */
