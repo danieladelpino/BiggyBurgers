@@ -6,6 +6,11 @@
   list-style: none;
 }
 
+span {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 label {
   display: none;
 }
@@ -310,15 +315,11 @@ header {
 .venta-box-card h4 {
   margin-top: 10px;
   margin-bottom: 15px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
-}
-.venta-box-card p {
-  font-size: 0.8rem;
 }
 @media (min-width: 1024px) {
   .venta-box-card {
-    height: 450px;
     padding: 20px;
     display: flex;
     flex-direction: column;

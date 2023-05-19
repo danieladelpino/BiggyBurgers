@@ -30,6 +30,12 @@ $titlecolor: white; //Color de titulos//
     list-style: none;
 }
 
+span {
+
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
 label {
     display: none;
 }
@@ -330,7 +336,7 @@ header {
             margin-bottom: 15px;
             font-size: 1.4rem;
             font-weight: 700;
-            
+
         }
 
         p {
@@ -409,17 +415,16 @@ header {
             h4 {
                 margin-top: 10px;
                 margin-bottom: 15px;
-                font-size: 1.4rem;
+                font-size: 1.5rem;
                 font-weight: 700;
             }
 
-            p {
-                font-size: .8rem;
 
-            }
+
+
 
             @include desktop() {
-                height: 450px;
+
                 padding: 20px;
                 display: flex;
                 flex-direction: column;
