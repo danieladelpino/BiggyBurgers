@@ -1,0 +1,59 @@
+// ========== Menu ========== //
+
+.menu-card {
+    width: 100%;
+    height: 450px;
+
+    h4 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+        font-weight: 700;
+
+    }
+
+    p {
+        font-size: .8rem;
+
+    }
+
+    @include desktop() {
+
+        border: 1px solid #ddd;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    background-color: rgb(243, 243, 243);
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+        margin-bottom: 10px;
+
+    }
+
+    .price {
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: #f00;
+    }
+
+}
+
+// ========== Mas Vendidos ========== //
+
+.venta-box-card {
+
+    @extend .menu-card;
+    border-radius: 15px;
+    margin: 16px;
+    width: auto;
+
+}

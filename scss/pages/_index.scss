@@ -1,0 +1,70 @@
+// ========== Inicio ========== //
+
+.inicio {
+    color: $titlecolor;
+    margin-left: 15px;
+
+    @include desktop() {
+        margin-left: 50px;
+    }
+
+    h2 {
+        font-weight: 700;
+        text-shadow: 1px 1px 1px black;
+        line-height: 2;
+        margin-bottom: 20px;
+    }
+
+    .wrap {
+        height: 100%;
+        @include flex-center();
+    }
+
+
+}
+
+// ==================== //
+
+.container {
+
+    &-info {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+
+        @include desktop() {
+            flex-direction: row;
+        }
+
+
+        & img {
+            width: 100%;
+            object-fit: contain;
+
+            @include tablet() {
+                width: 90%;
+            }
+
+            @include desktop() {
+                width: 40%;
+            }
+        }
+    }
+
+    &-text {
+
+        margin: 40px;
+
+        @include desktop() {
+            margin-left: 100px;
+        }
+
+
+        h2 {
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 1.8;
+        }
+    }
+}

@@ -1,1 +1,61 @@
+$bodycolor: whitesmoke; //Color del fondo//
+$textcolor: grey; //Color de texto//
+$titlecolor: white; //Color de titulos//
 
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin tablet {
+    @media (min-width: 600px) and (max-width: 1023px) {
+        @content;
+    }
+}
+
+
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+span {
+
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+svg {
+    color: white;
+}
+
+label {
+    display: none;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    color: $titlecolor;
+    margin-top: 10px;
+    margin-left: 5px;
+
+    @include desktop() {
+        margin-left: 50px;
+    }
+}
+
+p {
+    color: $textcolor;
+}
