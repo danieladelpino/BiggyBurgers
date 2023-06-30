@@ -1,8 +1,8 @@
 // ========== Promociones ========== //
 
 .box {
-    background: rgb(38, 38, 38);
-    background: linear-gradient(95deg, rgba(38, 38, 38, 1) 43%, rgba(62, 34, 0, 1) 88%, rgba(40, 0, 24, 1) 100%);
+   // background: rgb(38, 38, 38);
+   background: rgba(52, 52, 52, 1) radial-gradient(109.2% 2499.31% at 110.14% 35.05%, rgba(255, 35, 35, 0.15) 0%, rgba(17, 17, 17, 0) 100%);
     @include flex-center();
     flex-direction: column;
 

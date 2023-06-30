@@ -80,7 +80,7 @@ p {
 }
 @media (min-width: 1024px) {
   .container-info img {
-    width: 40%;
+    width: 35%;
   }
 }
 .container-text {
@@ -98,8 +98,7 @@ p {
 }
 
 .box {
-  background: rgb(38, 38, 38);
-  background: linear-gradient(95deg, rgb(38, 38, 38) 43%, rgb(62, 34, 0) 88%, rgb(40, 0, 24) 100%);
+  background: rgb(52, 52, 52) radial-gradient(109.2% 2499.31% at 110.14% 35.05%, rgba(255, 35, 35, 0.15) 0%, rgba(17, 17, 17, 0) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,11 +194,10 @@ p {
 @media (min-width: 1024px) {
   .venta-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-items: center;
     align-items: center;
     gap: 20px;
-    padding: 50px;
   }
 }
 .venta-box h2 {
@@ -233,7 +231,7 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 50px;
 }
 
@@ -414,22 +412,22 @@ header {
 }
 
 .menu-card, .venta-box-card {
-  width: 100%;
-  height: 450px;
-  background-color: rgb(243, 243, 243);
-  border: 1px solid #ddd;
-  padding: 10px;
+  width: 300px;
+  height: 350px;
   text-align: center;
   overflow: hidden;
+  background-color: #f1f3f3;
+  border-radius: 45px;
+  box-shadow: 0px 4px 15px -4px rgba(0, 0, 0, 0.28);
+  padding: 8px 16px;
 }
 .menu-card h4, .venta-box-card h4 {
-  margin-top: 10px;
-  margin-bottom: 15px;
   font-size: 1.4rem;
   font-weight: 700;
 }
 .menu-card p, .venta-box-card p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  margin: 2px;
 }
 @media (min-width: 1024px) {
   .menu-card, .venta-box-card {
@@ -441,9 +439,9 @@ header {
 }
 .menu-card img, .venta-box-card img {
   width: 100%;
-  height: 250px;
+  height: 190px;
   object-fit: contain;
-  margin-bottom: 10px;
+  padding: 20px;
 }
 .menu-card .price, .venta-box-card .price {
   font-weight: 700;
